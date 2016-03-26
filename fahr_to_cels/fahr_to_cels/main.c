@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 
-/* print Fahrenheit-Celcius table
+/* print Celcius-Fahrenheit table
     for fahr = 0, 20, ..., 300 */
 
 main ()
@@ -22,11 +22,11 @@ main ()
     
     fahr = lower;
     
-    printf("Fahrenheit\tCelcius\n");
+    printf("Celcius\tFahrenheit\n");
     
     while (fahr <= upper) {
         celsius = (5.0/9.0) * (fahr-32.0);
-        printf("%4.0f %13.1f\n", fahr, celsius);
+        printf("%5.1f %8.0f\n", celsius, fahr);
         fahr = fahr + step;
     }
 }
